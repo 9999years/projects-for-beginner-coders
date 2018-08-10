@@ -28,23 +28,42 @@ Python is a great language for beginners. If you want to make graphics,
 * Generate descriptions for your favorite type of scene; an example description
   for a garden might read: `The garden has flowers and corn. The flowers are
   visited by bees. The sky above is blue.`
+* Create a “text speak” converter by stripping words of vowels
 
 ## Visual art and pictures
 
 * A [spirograph]
-* Draw [the Mandelbrot set][mandelbrot]; print it to the console, using `#` to
-  indicate a point that is in the Mandelbrot set and empty space to indicate a
-  point that is not.
-  * Challenge: create a window and display it on the screen
+* A utility for resizing images. For Python, use [Pillow] to load images
+  * Challenge: let the user choose between several modes of resizing; average
+    areas in the source image to create smoother pictures
 
 ## Games
 
 * Tic-tac-toe
 * Rock paper scissors
+* Dice; ask the user for a die number (d6, d10, d20, etc.) and generate a random
+  number
+  * Bonus: ask for their [DnD] stats and compute a corrected score; print
+    “Natural 20” for a 20 and “critical miss” for a 0
+* Hangman
+  * Bonus: have the *user* enter a word and the computer guess. What happens
+    when the user lies?
 * Chess move validator; assume there are no pieces blocking a potential move but
   use each piece’s rule-set to determine where *might* be a valid move
+* Battleship
 
 ## Math
+
+### Fractal
+
+Fractals are shapes which repeat themselves, such as the [Sierpinski
+triangle][sierpenski]
+
+* Draw [the Mandelbrot set][mandelbrot]; print it to the console, using `#` to
+  indicate a point that is in the Mandelbrot set and empty space to indicate a
+  point that is not.
+  * You’ll need to perform arithmetic on complex numbers
+  * Challenge: create a window and display it on the screen
 
 ### Geometry
 
@@ -98,3 +117,6 @@ usually fall into one or both of two categories:
 [syl]: http://clas.mq.edu.au/speech/phonetics/phonology/syllable/syll_structure.html
 [roots]: https://en.wikipedia.org/wiki/List_of_Greek_and_Latin_roots_in_English
 [ceasar]: https://en.wikipedia.org/wiki/Caesar_cipher
+[DnD]: https://en.wikipedia.org/wiki/Dungeons_%26_Dragons
+[sierpinski]: https://en.wikipedia.org/wiki/Sierpinski_triangle
+[Pillow]: https://pillow.readthedocs.io/en/latest/
