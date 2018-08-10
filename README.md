@@ -16,16 +16,55 @@ Python is a great language for beginners. If you want to make graphics,
 ## Words and literature
 
 * Check for palindromes
-
-* Mad libs
-
+* Combine letters in normal ways to generate pronounceable but fake words
+  * Challenge: implement some of the real [English syllable structure rules][syl]
+* Using [a list of Greek and Latin root words][roots], combine them randomly to
+  make real-sounding but fake words
+* Fill out “mad libs”-type “build your own story” paragraphs
 * Generate sentences
+* Make a [Ceasar cipher][ceasar]
+  * Bonus: have a friend make one as well; exchange encoded texts and see if you
+    can decode theirs
+* Generate descriptions for your favorite type of scene; an example description
+  for a garden might read: `The garden has flowers and corn. The flowers are
+  visited by bees. The sky above is blue.`
 
 ## Visual art and pictures
 
-* Make a spirograph
+* A [spirograph]
+* Draw [the Mandelbrot set][mandelbrot]; print it to the console, using `#` to
+  indicate a point that is in the Mandelbrot set and empty space to indicate a
+  point that is not.
+  * Challenge: create a window and display it on the screen
 
-* Draw the Mandelbrot set
+## Games
+
+* Tic-tac-toe
+* Rock paper scissors
+* Chess move validator; assume there are no pieces blocking a potential move but
+  use each piece’s rule-set to determine where *might* be a valid move
+
+## Math
+
+### Geometry
+
+* Ask the user for a side-length and an angle of a right triangle and use
+  trigonometry to figure out the rest of the angles and side-lengths.
+
+### Arithmetic
+
+* Convert decimal numbers to fractions
+  * Warning: surprisingly difficult
+
+## Finance
+
+* Tally monthly expenses and determine how much you’ll spend on them in a year,
+  5 years, and 10 years.
+  * Warning: potentially depressing.
+* Ask for monthly deposits (and other info) and determine the savings upon
+  retirement
+  * Challenge: determine, given a certain monthly spending rate, how long the
+    savings will last
 
 # Rationale
 
@@ -47,5 +86,15 @@ usually fall into one or both of two categories:
    Examples: Make an FTP server, make a syntax highlighter, make a regex parser.
    Many of these are *also* very uncompelling for people who don’t already code!
 
+# To-Do
+
+* Add a glossary and key words (like “string concatenation” or “permutation”) to
+  ideas
+
 [karan]: https://github.com/karan/Projects
 [turtle]: https://docs.python.org/3/library/turtle.html
+[mandelbrot]: https://en.wikipedia.org/wiki/Mandelbrot_set
+[spirograph]: https://en.wikipedia.org/wiki/Spirograph
+[syl]: http://clas.mq.edu.au/speech/phonetics/phonology/syllable/syll_structure.html
+[roots]: https://en.wikipedia.org/wiki/List_of_Greek_and_Latin_roots_in_English
+[ceasar]: https://en.wikipedia.org/wiki/Caesar_cipher
