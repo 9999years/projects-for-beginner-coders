@@ -36,6 +36,10 @@ Python is a great language for beginners. If you want to make graphics,
 * A utility for resizing images. For Python, use [Pillow] to load images
   * Challenge: let the user choose between several modes of resizing; average
     areas in the source image to create smoother pictures
+* Generate random gradients. Can you figure out rules to make them as pretty as
+  possible?
+* Simulate [Conway’s Game of Life][conway], starting with noise (i.e.
+  randomly-generated cells)
 
 ## Games
 
@@ -57,7 +61,7 @@ Python is a great language for beginners. If you want to make graphics,
 ### Fractal
 
 Fractals are shapes which repeat themselves, such as the [Sierpinski
-triangle][sierpenski]
+triangle][sierpinski]
 
 * Draw [the Mandelbrot set][mandelbrot]; print it to the console, using `#` to
   indicate a point that is in the Mandelbrot set and empty space to indicate a
@@ -69,11 +73,26 @@ triangle][sierpenski]
 
 * Ask the user for a side-length and an angle of a right triangle and use
   trigonometry to figure out the rest of the angles and side-lengths.
+* Ask the user for two points on a line and print out its intersection with the
+  x and y-axis as well as its slope.
+
+### Algebra
+
+* Make a program for solving the quadratic equation (ask the user for the value
+  of *a*, *b*, and *c*)
+  * Challenge: gracefully handle imaginary roots
+  * Challenge: accept binomial pairs as input (e.g. `(x + 2)(x - 3)`)
 
 ### Arithmetic
 
 * Convert decimal numbers to fractions
   * Warning: surprisingly difficult
+
+### Statistics
+
+* Given a set of points, perform a [linear fit][linearfit]
+  * Challenge: tell the user how accurate the fit is
+  * Challenge: Add other types of fits: quadratic, sinusoidal, etc.
 
 ## Finance
 
@@ -120,3 +139,5 @@ usually fall into one or both of two categories:
 [DnD]: https://en.wikipedia.org/wiki/Dungeons_%26_Dragons
 [sierpinski]: https://en.wikipedia.org/wiki/Sierpinski_triangle
 [Pillow]: https://pillow.readthedocs.io/en/latest/
+[linearfit]: https://en.wikipedia.org/wiki/Linear_regression
+[conway]: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
