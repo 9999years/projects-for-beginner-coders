@@ -43,10 +43,17 @@ appeal to.
 * Fill a space with circles that touch at the edges
   * Doing this while minimizing empty space is called “[circle packing][circlepacking]”
     and is the subject of continued research
+* [Boids] (read: birds), a simulation of bird flocking dynamics ([detailed
+  pseudocode here][boidscode])
+* Recreate the classic [Windows starfield screensaver][starfield]
 
 ## Games
 
-* Tic-tac-toe
+These games can all be played as *text*, so you don’t have to take the scary
+leap into graphics (even “creating a window” can be surprisingly difficult). I
+recommend implementing them as text at first.
+
+* Tic-tac-toe; draw the board with text (see fig. 1 below)
 * Rock paper scissors
 * Dice; ask the user for a die number (d6, d10, d20, etc.) and generate a random
   number
@@ -55,22 +62,43 @@ appeal to.
 * Hangman
   * Bonus: have the *user* enter a word and the computer guess. What happens
     when the user lies?
+  * Bonus: a computer can play hangman very quickly. Using a
+    [word-list][corncob], have the computer play automated games of hangman and
+    adjust its guessing order to find the best strategy. Does it deviate from
+    the standard English letter frequency? Warning: the number of ways to
+    rearrange the alphabet is a 26-digit number, and there’s 63 billion ways to
+    guess at hangman for a 7-letter word
 * Chess move validator; assume there are no pieces blocking a potential move but
   use each piece’s rule-set to determine where *might* be a valid move
 * Battleship
+
+*Fig. 1:* a tic-tac-toe board
+
+          a b c
+        1  │ │
+          ─┼─┼─
+        2  │o│
+          ─┼─┼─
+        3 ×│ │
 
 ## Math
 
 ### Fractal
 
 Fractals are shapes which repeat themselves, such as the [Sierpinski
-triangle][sierpinski]
+triangle][sierpinski]. Some of these can get quite mathematically complex!
+Fractals are most often used to simulate “organic” and chaotic patterns created
+naturally by different types of plants, animals, and landscapes, but they’re
+also great for seeing patterns that emerge when we repeatedly apply a simple set
+of rules.
 
 * Draw [the Mandelbrot set][mandelbrot]; print it to the console, using `#` to
   indicate a point that is in the Mandelbrot set and empty space to indicate a
   point that is not.
   * You’ll need to perform arithmetic on complex numbers
   * Challenge: create a window and display it on the screen
+* Draw [L-systems]; start by recreating a [binary tree][btree]
+* Simulate a [reaction-diffusion][reactiondiffusion] system
 
 ### Geometry
 
@@ -132,3 +160,10 @@ triangle][sierpinski]
 [conway]: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 [circlepacking]: https://en.wikipedia.org/wiki/Circle_packing
 [Python]: https://www.python.org/
+[Boids]: https://en.wikipedia.org/wiki/Boids
+[boidscode]: http://www.kfish.org/boids/pseudocode.html
+[L-systems]: https://en.wikipedia.org/wiki/L-system
+[btree]: https://en.wikipedia.org/wiki/File:Graftal7.png
+[reactiondiffusion]: https://en.wikipedia.org/wiki/Reaction%E2%80%93diffusion_system
+[starfield]: https://youtu.be/SiSXDEIu3GI?t=12
+[corncob]: http://www.mieliestronk.com/wordlist.html
