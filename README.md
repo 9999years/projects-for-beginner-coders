@@ -10,7 +10,7 @@ appeal to.
 
 ## General tips
 
-Python is a great language for beginners. If you want to make graphics,
+[Python] is a great language for beginners. If you want to make graphics,
 [turtle] is a great library that comes with Python!
 
 ## Words and literature
@@ -131,3 +131,4 @@ triangle][sierpinski]
 [linearfit]: https://en.wikipedia.org/wiki/Linear_regression
 [conway]: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 [circlepacking]: https://en.wikipedia.org/wiki/Circle_packing
+[Python]: https://www.python.org/
