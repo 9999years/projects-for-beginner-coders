@@ -1,8 +1,8 @@
 # Projects for Beginner Coders
 
-This is a list of projects that beginners might enjoy to make. See the
-“rationale” section at the bottom for details. These projects should be “easy”
-in the sense that they don’t contain that many parts that need to work together.
+This is a list of projects that beginners might enjoy to make. See `about.md`
+for more information. These projects should be “easy” in the sense that they
+don’t contain that many parts that need to work together.
 
 They are organized by “type” — not by what area of computing they touch upon
 (filesystems, networking, graphics) — but by what type of person they might
@@ -40,6 +40,9 @@ Python is a great language for beginners. If you want to make graphics,
   possible?
 * Simulate [Conway’s Game of Life][conway], starting with noise (i.e.
   randomly-generated cells)
+* Fill a space with circles that touch at the edges
+  * Doing this while minimizing empty space is called “[circle packing][circlepacking]”
+    and is the subject of continued research
 
 ## Games
 
@@ -75,6 +78,17 @@ triangle][sierpinski]
   trigonometry to figure out the rest of the angles and side-lengths.
 * Ask the user for two points on a line and print out its intersection with the
   x and y-axis as well as its slope.
+* Ask the user for a circle’s radius, diameter, circumference, or area and tell
+  them the rest of the information about the circle
+
+### Calculus
+
+* Ask the user for polynomial coefficients and calculate the derivative (and/or
+  integral)
+* Display the slope-field of a differential equation
+  * Taking user input is much harder than it sounds — just code the formula into
+    your program
+* Use a rectangular or trapezoidal approximation to calculate a definite integral
 
 ### Algebra
 
@@ -104,31 +118,6 @@ triangle][sierpinski]
   * Challenge: determine, given a certain monthly spending rate, how long the
     savings will last
 
-# Rationale
-
-Many of the lists of projects for beginners out there are Bad. The projects
-usually fall into one or both of two categories:
-
-1. **Extremely uncompelling** — these projects are not *interesting*; they don’t
-   solve a problem. I had the most fun as a kid when I was making things to “do
-   something cool” for me, whether it was generating fake practice charts for
-   band class, making a program to solve my math homework problems, or making
-   programs to draw cool pictures on my TI-83.
-
-   Examples: Generate a bunch of prime numbers, make an alarm clock, make a
-   checkbook, implement Dijkstra’s algorithm.
-
-2. **Extremely difficult** — I’ve seen lists of [“projects anyone can do”][karan]
-   filled with projects that would stump me today.
-
-   Examples: Make an FTP server, make a syntax highlighter, make a regex parser.
-   Many of these are *also* very uncompelling for people who don’t already code!
-
-# To-Do
-
-* Add a glossary and key words (like “string concatenation” or “permutation”) to
-  ideas
-
 [karan]: https://github.com/karan/Projects
 [turtle]: https://docs.python.org/3/library/turtle.html
 [mandelbrot]: https://en.wikipedia.org/wiki/Mandelbrot_set
@@ -141,3 +130,4 @@ usually fall into one or both of two categories:
 [Pillow]: https://pillow.readthedocs.io/en/latest/
 [linearfit]: https://en.wikipedia.org/wiki/Linear_regression
 [conway]: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
+[circlepacking]: https://en.wikipedia.org/wiki/Circle_packing
