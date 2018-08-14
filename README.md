@@ -29,6 +29,9 @@ hundreds of times, programming might be a good way to solve it!
 * Make a [Ceasar cipher][ceasar]
   * Bonus: have a friend make one as well; exchange encoded texts and see if you
     can decode theirs
+* Make a [ROT13] “cipher”, which “replaces a letter with the 13th letter after
+  it”; ROT13 is sometimes used online for obscuring spoilers or other text
+  * Challenge: handle letters with diacritics like á, î, or ç.
 * Generate descriptions for your favorite type of scene; an example description
   for a garden might read: `The garden has flowers and corn. The flowers are
   visited by bees. The sky above is blue.`
@@ -213,3 +216,4 @@ of rules.
 [TRS]: https://archive.org/details/1001_Things_To_Do_With_Your_TRS-80_1984_Tab_Books
 [box]: https://en.wikipedia.org/wiki/Box-drawing_character
 [freefall]: https://en.wikipedia.org/wiki/Free_fall
+[ROT13]: https://en.wikipedia.org/wiki/ROT13
