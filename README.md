@@ -51,12 +51,19 @@ hundreds of times, programming might be a good way to solve it!
 * [Boids] (read: birds), a simulation of bird flocking dynamics ([detailed
   pseudocode here][boidscode])
 * Recreate the classic [Windows starfield screensaver][starfield]
+* Generate mazes as text
+  * Bonus: use [Unicode box-drawing characters][box] to make your maze look
+    extra spiffy
+  * Challenge: ensure your mazes are solvable
+    * Challenge: print the solution as well
 
 ## Games
 
-These games can all be played as *text*, so you don’t have to take the scary
-leap into graphics (even “creating a window” can be surprisingly difficult). I
-recommend implementing them as text at first.
+These games can all be played as *text* (e.g. representing the board as
+carefully-organized text; examples next to exercises under details where
+relevant), so you don’t have to take the scary leap into graphics (even
+“creating a window” can be surprisingly difficult). I recommend implementing
+them as text at first.
 
 * Tic-tac-toe; draw the board with text <details><summary>Example board</summary><pre><code>  a b c
 1  │ │
@@ -82,7 +89,9 @@ recommend implementing them as text at first.
     billion ways to guess at hangman for a 7-letter word. That’s a lot, even for
     a modern computer!
     <p>Randomly adjusting an algorithm’s input according to a function which
-    determines how “good” the input is a [genetic algorithm][genetic].
+    determines how “good” the input is a <a
+    href="https://en.wikipedia.org/wiki/Genetic_algorithm">genetic
+    algorithm</a>.
     </details>
   * Bonus: don’t actually choose a word until the player wins / loses; filter
     choices from a word-list each time they guess to make them as likely to lose
@@ -106,6 +115,9 @@ recommend implementing them as text at first.
   favorability" multiplied by the relative importance for each factor.</details>
 
 ## Math
+
+These projects deal *primarily* with different aspects of math — although some
+of them border on visual exercises.
 
 ### Fractal
 
@@ -196,3 +208,4 @@ of rules.
 [harmonograph]: https://en.wikipedia.org/wiki/Harmonograph
 [genetic]: https://en.wikipedia.org/wiki/Genetic_algorithm
 [TRS]: https://archive.org/details/1001_Things_To_Do_With_Your_TRS-80_1984_Tab_Books
+[box]: https://en.wikipedia.org/wiki/Box-drawing_character
