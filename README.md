@@ -13,9 +13,13 @@ appeal to.
 [Python] is a great language for beginners. If you want to make graphics,
 [turtle] is a great library that comes with Python!
 
+Nothing will help you learn to write code more than having a problem to solve.
+If you find yourself doing any repetitive, simple, rule-based task tens or
+hundreds of times, programming might be a good way to solve it!
+
 ## Words and literature
 
-* Check for palindromes
+* Check for [palindromes]
 * Combine letters in normal ways to generate pronounceable but fake words
   * Challenge: implement some of the real [English syllable structure rules][syl]
 * Using [a list of Greek and Latin root words][roots], combine them randomly to
@@ -33,6 +37,7 @@ appeal to.
 ## Visual art and pictures
 
 * A [spirograph]
+  * Relatedly: a [harmonograph]
 * A utility for resizing images. For Python, use [Pillow] to load images
   * Challenge: let the user choose between several modes of resizing; average
     areas in the source image to create smoother pictures
@@ -53,7 +58,13 @@ These games can all be played as *text*, so you don’t have to take the scary
 leap into graphics (even “creating a window” can be surprisingly difficult). I
 recommend implementing them as text at first.
 
-* Tic-tac-toe; draw the board with text (see fig. 1 below)
+* Tic-tac-toe; draw the board with text <details><summary>Example board</summary><pre><code>  a b c
+1  │ │
+  ─┼─┼─
+2  │o│
+  ─┼─┼─
+3 ×│ │
+</code></pre></details>
 * Rock paper scissors
 * Dice; ask the user for a die number (d6, d10, d20, etc.) and generate a random
   number
@@ -64,22 +75,35 @@ recommend implementing them as text at first.
     when the user lies?
   * Bonus: a computer can play hangman very quickly. Using a
     [word-list][corncob], have the computer play automated games of hangman and
-    adjust its guessing order to find the best strategy. Does it deviate from
-    the standard English letter frequency? Warning: the number of ways to
-    rearrange the alphabet is a 26-digit number, and there’s 63 billion ways to
-    guess at hangman for a 7-letter word
+    adjust its guessing order to find the best
+    strategy.<details><summary>Hint</summary>
+    Try starting from the standard English letter frequency. Warning: the number
+    of ways to rearrange the alphabet is a 26-digit number, and there’s 63
+    billion ways to guess at hangman for a 7-letter word. That’s a lot, even for
+    a modern computer!
+    <p>Randomly adjusting an algorithm’s input according to a function which
+    determines how “good” the input is a [genetic algorithm][genetic].
+    </details>
+  * Bonus: don’t actually choose a word until the player wins / loses; filter
+    choices from a word-list each time they guess to make them as likely to lose
+    as possible
 * Chess move validator; assume there are no pieces blocking a potential move but
   use each piece’s rule-set to determine where *might* be a valid move
 * Battleship
 
-*Fig. 1:* a tic-tac-toe board
+## Utility
 
-          a b c
-        1  │ │
-          ─┼─┼─
-        2  │o│
-          ─┼─┼─
-        3 ×│ │
+* A decision-making assistant <details><summary>[Description from “1001
+  things to do with your TRS-80”][TRS]</summary> 
+  Complex decision making may be facilitated through the use of the computer. The
+  computer first requests you to enter a list of the factors involved in making a
+  decision. Next, you are asked to rate the relative importance of each of these
+  factors on a scale of ten. Finally, for each possible outcome to the decision,
+  you are asked to rate the favorability of each factor on a scale of ten. This
+  data is then analyzed, and the outcome with the highest "favorability" score for
+  the most important factors is the one chosen as the final decision. The most
+  favorable decision will have the highest score, computed by summing the "rate of
+  favorability" multiplied by the relative importance for each factor.</details>
 
 ## Math
 
@@ -98,7 +122,8 @@ of rules.
   * You’ll need to perform arithmetic on complex numbers
   * Challenge: create a window and display it on the screen
 * Draw [L-systems]; start by recreating a [binary tree][btree]
-* Simulate a [reaction-diffusion][reactiondiffusion] system
+* Calculus required: Simulate a [reaction-diffusion][reactiondiffusion] system
+  * If you have a good tutorial, please link me. I can’t find anything!
 
 ### Geometry
 
@@ -167,3 +192,7 @@ of rules.
 [reactiondiffusion]: https://en.wikipedia.org/wiki/Reaction%E2%80%93diffusion_system
 [starfield]: https://youtu.be/SiSXDEIu3GI?t=12
 [corncob]: http://www.mieliestronk.com/wordlist.html
+[palindromes]: https://en.wikipedia.org/wiki/Palindrome
+[harmonograph]: https://en.wikipedia.org/wiki/Harmonograph
+[genetic]: https://en.wikipedia.org/wiki/Genetic_algorithm
+[TRS]: https://archive.org/details/1001_Things_To_Do_With_Your_TRS-80_1984_Tab_Books
