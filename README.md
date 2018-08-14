@@ -161,6 +161,9 @@ of rules.
   of *a*, *b*, and *c*)
   * Challenge: gracefully handle imaginary roots
   * Challenge: accept binomial pairs as input (e.g. `(x + 2)(x - 3)`)
+* Make a simulation of a ball [bouncing with gravity][freefall]
+  * Bonus: simulate horizontal movement as well
+  * Challenge: simulate collision of two balls
 
 ### Arithmetic
 
@@ -209,3 +212,4 @@ of rules.
 [genetic]: https://en.wikipedia.org/wiki/Genetic_algorithm
 [TRS]: https://archive.org/details/1001_Things_To_Do_With_Your_TRS-80_1984_Tab_Books
 [box]: https://en.wikipedia.org/wiki/Box-drawing_character
+[freefall]: https://en.wikipedia.org/wiki/Free_fall
